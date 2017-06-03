@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bienvenido a nuestro Hotel</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/miEstilo.css">
+	<link rel="stylesheet" type="text/css" href="css/miTipografia.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+
+</head>
+
+<body>
+	<nav class=" navbar navbar-default navbar-fixed-top navbar-inverse barra_navegacion">
+	  <div class="container">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#miMenu" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Hotel</a>
+		    </div>
+
+		     <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="miMenu">
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">Inicio </a></li>
+		       <li class="active"><a href="#">Habitaciones <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">Eventos</a></li>
+		      </ul>
+		 
+		      <ul class="nav navbar-nav navbar-right"> 
+		        <li><button type="button" class="btn btn-success btn-transparente navbar-btn">Acceder</button>
+		        <button type="button" class="btn btn-success btn-transparente navbar-btn">Registrarme</button></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse --> 
+	  </div>
+	</nav>
+
+	<div class="separador">
+		
+	</div>
+	<center>
+	<div class="header_transparente">
+		<div class="col-sm-12 col-md-12">
+			<form class="form-inline">
+				<div class="form-group">
+	                <div class='input-group date' id='datetimepicker1'>
+	                    <input type='text' class="form-control" placeholder="Llegada"  />
+	                    <span class="input-group-addon">
+	                        <span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	                </div>
+	           	</div>
+				<div class="form-group">
+	                <div class='input-group date' id='datetimepicker2'>
+	                    <input type='text' class="form-control" placeholder="Salida" />
+	                    <span class="input-group-addon">
+	                        <span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	                </div>
+	            </div> 
+	            <div class="form-group">
+				 	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    tipo
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+  </ul>
+</div>
+				</div>
+
+	            <div class="form-group">
+				 	<label>Tipo de habitación:</label>
+				 	<select class="form-control">
+					  <option>Sencilla</option>
+					  <option>Doble</option>
+					  <option>Triple</option>
+					</select>	
+				</div>
+				<div class="form-group">
+				 	<label>Habitaciones:</label>
+				 	<select class="form-control">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>	
+				</div>
+
+				<div class="form-group">
+				  <label for="exampleInputEmail2"> </label>
+				  	<button type="submit" class="btn btn-default btn-success">Buscar</button>	
+				</div>
+			</form>
+		</div>
+	</div>
+	</center>
+	<br><br><br>
+
+	
+
+	<div class="container-fluid"> 
+
+		<div class="row offer_section">
+		  
+	  	 	
+	  	  <div class="col-sm-6 col-md-4" >
+		    <div class="thumbnail">
+		      <img src="img/img1.jpg" alt="...">
+		      <div class="caption">
+		       <h3>Habitacion Sencilla </h3>
+		        <table width="100%">
+		        	<tr>
+		        		<td width="55%">
+		        			<ul class="list-unstyled">
+							  <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Una persona</li>
+							  <li><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Internet y red Wi-Fi</li>
+							  <li><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Desayuno</li>
+							</ul>
+		        		</td>
+		        		<td width="45%" align="right">
+		        			<p class="precio"><strong>$ 1200.00</strong> </p>
+		        			<p>
+		        				<a href="#" class="btn btn-info" role="button">Detalles</a> 
+		        				<a href="#" class="btn btn-success" role="button">Reservar</a>
+		        			</p>
+		        		</td>
+		        	</tr>
+		        </table>
+		       	<p><em>*Precio por noche. I.S.V incluido</em></p>
+		  		 
+		      </div>
+		    </div>
+		  </div>
+
+		   <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="img/img2.jpg" alt="...">
+		      <div class="caption">
+		        <h3>Sala de proyecciones</h3>
+		        <table width="100%">
+		        	<tr>
+		        		<td width="55%">
+		        			<ul class="list-unstyled">
+							  <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 30 personas</li>
+							  <li><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Internet y red Wi-Fi</li>
+							  <li><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Pantalla de proyección</li>
+							</ul>
+		        		</td>
+		        		<td width="45%" align="right">
+		        			<p class="precio"><strong>$ 1200</strong> </p>
+		        			<p>
+		        				<a href="#" class="btn btn-info" role="button">Detalles</a> 
+		        				<a href="#" class="btn btn-success" role="button">Reservar</a>
+		        			</p>
+		        		</td>
+		        	</tr>
+		        </table>
+		        <p><em>*Precio por noche. I.S.V incluido</em></p>
+		      </div>
+		    </div>
+		  </div>
+
+		   <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="img/img4.jpg" alt="...">
+		      <div class="caption">
+		        <h3>Estacinamiento 24/7</h3>
+		        <table width="100%">
+		        	<tr>
+		        		<td width="55%">
+		        			<ul class="list-unstyled">
+							  <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 30 personas</li>
+							  <li><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Internet y red Wi-Fi</li>
+							  <li><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Pantalla de proyección</li>
+							</ul>
+		        		</td>
+		        		<td width="45%" align="right">
+		        			<p class="precio"><strong>$ 1200</strong> </p>
+		        			<p>
+		        				<a href="#" class="btn btn-info" role="button">Detalles</a> 
+		        				<a href="#" class="btn btn-success" role="button">Reservar</a>
+		        			</p>
+		        		</td>
+		        	</tr>
+		        </table>
+		        <p><em>*Precio por noche. I.S.V incluido</em></p>
+		      </div>
+		    </div>
+		  </div>
+	  		<div class="col-sm-12 col-md-12">
+	  			<center><p><a href="#" class="btn btn-primary" role="button">Ver mas opciones  <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></p></center>
+	  		</div>
+	  <!-- final seccion de ofertas -->	 
+	  </div>
+
+ 
+			
+		</div>
+
+		<!-- pie de pagina -->
+		<div class="row footer_section">
+			 <div class="col-md-4">
+			 	<p class="miTitulo_claro">Quienes Somos</p>
+			 	<p class="texto_blanco">
+		  		 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		  		 </p>
+		  	</div>
+			<div class="col-md-4"">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26034.764156251953!2d-87.17330793567997!3d14.071812489489533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ea25a43ce2571e5!2sBas%C3%ADlica+de+Suyapa!5e0!3m2!1ses!2shn!4v1495225722236" width="99%" height="450" frameborder="0" style="border:0" allowfullscreen>
+				</iframe>
+			</div>
+			<div class="col-md-4 texto_blanco" >
+				<h3>Informacion de contacto</h3>
+				<p><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Donde estamos</p>
+				<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Escríbanos</p>
+				<p>algo_aqui@gmail.com</p>
+				<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Llámenos</p>
+				<p>504 2200-0001</p>
+			</div>
+		</div>
+
+		<div class="row footer_section_bottom">
+		 <hr>
+			 <div class="col-md-12">
+			 	<p class="texto_blanco" style="text-align: center;">Derechos reservados 2017</p>
+		  	</div>
+
+		</div>
+
+
+	<!-- fin del contenedor -->
+	</div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker2').datetimepicker();
+            });
+        </script>
+
+</body>
+
+</html>
